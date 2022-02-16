@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
 .body {
     background-color: black;
     position: absolute;
@@ -15,9 +14,8 @@
     align-items: center;
     justify-content: center;
 }
-
 .parent {
-   background-color: aquamarine;
+    background-color: rgba(226, 235, 238, 0.863);
     position: relative;
     width: 70%;
     height: 100%;
@@ -25,11 +23,11 @@
     align-items: center;
     justify-content: center;
 }
-
 .main {
+    background-color: rgb(241, 221, 37);
     position: relative;
     width: 90%;
-    height: 95%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,62 +35,34 @@
     border: 2px solid white;
     border-radius: 10px;
     box-shadow: 0px 13px 12px 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
-
 .countText {
     display: flex;
     align-items: center;
     justify-content: center;
-    letter-spacing: 2px;
-    color: white;
-    font-size: 30px;
+   font-weight: 200px;
+   color: azure;
+   font-size: 30px;
 }
-
-.number {
-    font-size: 100px;
-    font-weight: 600;
-    color: rgb(42, 44, 42);
-}
-
-.options button {
-    background-color: rgba(7, 7, 63, 0.884);
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
+  .options button{
+    background-color: rgba(226, 235, 238, 0.863);
     border: none;
-    padding: 20px 25px 20px 25px;
+    border-radius: 5px;
+    color: rgba(174, 195, 196, 0.719);
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 10px;
     box-shadow: 5px 10px 18px #1D1717;
-}
-
-.options button:hover,
-.btn button:hover {
+  }
+  .options button:hover,
+  .btn button:hover{
     transform: scale(0.96);
-}
-
-.options button.leftButton {
+  }
+  .options button.leftButton{
     margin-right: 50px;
-}
-
-.options button.rightButton {
+  }
+  .options button.rightButton{
     margin-left: 50px;
-}
-
-.addABParent {
-    text-align: -webkit-center;
-}
-
-.addAB {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-input {
-    padding: 5px 10px;
-    text-align: center;
-    background-color: aqua;
-}
+  }

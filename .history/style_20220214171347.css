@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: antiquewhite;
+  }
+
+  .count{
+      text-align: center;
+  }
+  .zero{
+      text-align: center;
+      font-size: 500px;
+  }
+  .right{
+      te
+  }
+  .left{
+
+  }
+
+  .big{
+      width: 100%;
+      height: 100%;
+      align-items: center;
+  }

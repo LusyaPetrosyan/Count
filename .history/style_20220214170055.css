@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: antiquewhite;
+  }
+
+  .count{
+      text-align: center;
+  }
+  .zero{
+      te;
+  }
+
+  .big{
+      width: 80%;
+      height: 80%;
+      align-items: center;
+  }

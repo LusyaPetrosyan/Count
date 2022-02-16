@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: rgb(19, 222, 230);
+  }
+
+  .big{
+      width: 80%;
+      height: 80%;
+  }

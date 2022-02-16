@@ -17,7 +17,7 @@
 }
 
 .parent {
-   background-color: aquamarine;
+    ba
     position: relative;
     width: 70%;
     height: 100%;
@@ -27,9 +27,8 @@
 }
 
 .main {
-    position: relative;
     width: 90%;
-    height: 95%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,19 +79,4 @@
 
 .options button.rightButton {
     margin-left: 50px;
-}
-
-.addABParent {
-    text-align: -webkit-center;
-}
-
-.addAB {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-input {
-    padding: 5px 10px;
-    text-align: center;
-    background-color: aqua;
 }

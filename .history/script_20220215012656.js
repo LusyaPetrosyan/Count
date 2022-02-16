@@ -6,11 +6,8 @@ const addAB = document.querySelector(".addAB");
 const valueOfSum = document.getElementById("valueOfSum");
 const inputNum1 = document.getElementById("inputNum1");
 const inputNum2 = document.getElementById("inputNum2");
-const plyus = document.querySelector(".plyus");
-const equals = document.querySelector(".equals");
-const fibonLeft = document.querySelector(".fibonLeft");
-const fibonRight = document.querySelector(".fibonRight");
-
+const plyus = document.querySelector(".plyus")
+const equals = document.querySelector(".equals")
 
 let i = 0;
 leftButton.addEventListener("click", function minus() {
@@ -26,11 +23,6 @@ rightButton.addEventListener("click", function pulus() {
 centerButton.addEventListener("click", function reset() {
     i = 0;
     num.innerHTML = i;
-    inputNum1.value = "";
-    plyus.innerText = "";
-    inputNum2.value = "";
-    equals.innerText = "";
-    valueOfSum.innerText = "";
 });
 
 function add(a) {
@@ -46,7 +38,7 @@ addAB.addEventListener("click", function() {
     let inputNum2Value = Number(inputNum2.value);
     valueOfSum.innerText = add(inputNum1Value)(inputNum2Value)
 });
-//taymer start
+
 let hour = 0;
 let minute = 0;
 let second = 0;
@@ -61,13 +53,13 @@ document.form_main.reset.onclick = () => reset();
 function start() {
     pause();
     cron = setInterval(() => { timer(); }, 10);
-}
-
-function pause() {
+  }
+  
+  function pause() {
     clearInterval(cron);
-}
-
-function reset() {
+  }
+  
+  function reset() {
     hour = 0;
     minute = 0;
     second = 0;
@@ -76,46 +68,26 @@ function reset() {
     document.getElementById('minute').innerText = '00';
     document.getElementById('second').innerText = '00';
     document.getElementById('millisecond').innerText = '000';
-}
-
-function timer() {
+  }
+  function timer() {
     if ((millisecond += 10) == 1000) {
-        millisecond = 0;
-        second++;
+      millisecond = 0;
+      second++;
     }
     if (second == 60) {
-        second = 0;
-        minute++;
+      second = 0;
+      minute++;
     }
     if (minute == 60) {
-        minute = 0;
-        hour++;
+      minute = 0;
+      hour++;
     }
     document.getElementById('hour').innerText = returnData(hour);
     document.getElementById('minute').innerText = returnData(minute);
     document.getElementById('second').innerText = returnData(second);
     document.getElementById('millisecond').innerText = returnData(millisecond);
-}
-
-function returnData(input) {
+  }
+  
+  function returnData(input) {
     return input > 10 ? input : `0${input}`
-}
-//taymer end
-
-fibonLeft.addEventListener("click", function() {
-    document.getElementById("inputNumFibo").value = "";
-    n = 0;
-});
-
-let n = 0;
-fibonRight.addEventListener("click", function() {
-    n++
-    function fibonacci(n) {
-        if (n == 0 || n == 1) {
-            return 1;
-        }
-        return fibonacci(n - 2) + fibonacci(n - 1);
-    }
-    fibonacci(n);
-    document.getElementById("inputNumFibo").value = fibonacci(n);
-});
+  }

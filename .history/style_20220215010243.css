@@ -17,7 +17,7 @@
 }
 
 .parent {
-   background-color: aquamarine;
+    background-color: aquamarine;
     position: relative;
     width: 70%;
     height: 100%;
@@ -29,7 +29,7 @@
 .main {
     position: relative;
     width: 90%;
-    height: 95%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,6 +93,4 @@
 
 input {
     padding: 5px 10px;
-    text-align: center;
-    background-color: aqua;
 }

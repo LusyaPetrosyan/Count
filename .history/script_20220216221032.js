@@ -109,7 +109,8 @@ fibonLeft.addEventListener("click", function() {
 
 let n = 0;
 fibonRight.addEventListener("click", function() {
-    n++
+    
+
     function fibonacci(n) {
         if (n == 0 || n == 1) {
             return 1;

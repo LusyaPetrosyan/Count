@@ -17,7 +17,7 @@
 }
 
 .parent {
-   background-color: aquamarine;
+   
     position: relative;
     width: 70%;
     height: 100%;
@@ -27,6 +27,7 @@
 }
 
 .main {
+    background-image: url("./Caesar-Materica-Ocra-Grip-225x453-cm-AFU6-Casa39.jpg");
     position: relative;
     width: 90%;
     height: 95%;
