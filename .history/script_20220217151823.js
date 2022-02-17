@@ -117,5 +117,5 @@ fibonRight.addEventListener("click", function() {
     }
     fibonacci(n);
     document.getElementById("inputNumFibo").value = fibonacci(n);
-    n++
+    
 });
