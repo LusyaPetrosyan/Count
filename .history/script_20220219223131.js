@@ -12,36 +12,27 @@ const fibonLeft = document.querySelector(".fibonLeft");
 const fibonRight = document.querySelector(".fibonRight");
 
 
-function Counter() {
-    let count = 0;
-    this.up = function () {
-        return ++count;
-    }
-    this.down = function () {
-        return --count;
-    }
-    this.reset = function () {
-        return count = 0;
-    }
-}
-
-let counter = new Counter();
-leftButton.addEventListener("click", function() {
-    num.innerHTML = counter.down();
+let i = 0;
+leftButton.addEventListener("click", function minus() {
+    i--;
+    num.innerHTML = i;
 });
 
-rightButton.addEventListener("click", function() {  
-   num.innerHTML = counter.up();
-    });
-
-centerButton.addEventListener("click", function() {
-    
-    num.innerHTML = counter.reset();
-
+rightButton.addEventListener("click", function pulus() {
+    i++;
+    num.innerHTML = i;
 });
 
+centerButton.addEventListener("click", function reset() {
+    i = 0;
+    num.innerHTML = i;
+    inputNum1.value = "";
+    plyus.innerText = "";
+    inputNum2.value = "";
+    equals.innerText = "";
+    valueOfSum.innerText = "";
+});
 
-//////////
 function add(a) {
     return function name(b) {
         return a + b;
@@ -55,12 +46,10 @@ addAB.addEventListener("click", function() {
     let inputNum2Value = Number(inputNum2.value);
     valueOfSum.innerText = add(inputNum1Value)(inputNum2Value)
 });
-//taymer start
 let hour = 0;
 let minute = 0;
 let second = 0;
 let millisecond = 0;
-
 let cron;
 
 document.form_main.start.onclick = () => start();
@@ -109,7 +98,6 @@ function timer() {
 function returnData(input) {
     return input > 10 ? input : `0${input}`
 }
-//taymer end
 
 fibonLeft.addEventListener("click", function() {
     document.getElementById("inputNumFibo").value = "";
@@ -118,8 +106,6 @@ fibonLeft.addEventListener("click", function() {
 
 let n = 0;
 fibonRight.addEventListener("click", function() {
-    n++
-
     function fibonacci(n) {
         if (n == 0 || n == 1) {
             return 1;
@@ -128,4 +114,5 @@ fibonRight.addEventListener("click", function() {
     }
     fibonacci(n);
     document.getElementById("inputNumFibo").value = fibonacci(n);
+    n++
 });
